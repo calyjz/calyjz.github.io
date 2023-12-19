@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    width: 100%;
+}
+.navbar{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.navbarLeft ul li{
+    list-style: none;
+    display: inline-block;
+    align-items: left;
+    margin-right: 20px;
+    position: relative;
+}
+.navbarLeft ul li a{
+    text-decoration: none;
+    color: blueviolet; /*change this */
+}
+.navbarLeft ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.navbarLeft ul li:hover::after{
+    width: 100%;
+    
+}
+.navbarRight ul li{
+    list-style: none;
+    display: inline-block;
+    align-items: right;
+    margin-left: 10px;
+}
+
+
+.headerblock{
+    background-color: darksalmon;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    
+}
+.Headertext{
+    background-color: orchid;
+    flex: 3;
+    text-align: right;
+    font-size: 40px;
+    margin-right: 5%;
+    height: 30%;
+
+}
+.headshot{
+    margin-left: auto;
+    margin-right: 10%;
+    width: 30%;
+}
+ul{
+    list-style: none;
+    padding-left: 10 px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.about{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    background-color: darkgoldenrod;
+    
+}
+.abouttext{
+    width: 70%;
+    margin-left: 20px;
+    display: inline-block;
+}
+.links{
+    display: inline-block;
+}
+.experience{
+    margin-left: 70px;
+    margin-right: 50px;
+    background-color: bisque;
+}
+.education{
+    margin-left: 70px;
+    margin-right: 50px;
+    background-color: lightblue;
+}
