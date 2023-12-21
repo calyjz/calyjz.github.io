@@ -2,17 +2,19 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: scroll;
 }
 img{
     width: 100%;
 }
 .navbar{
-    width: 95%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-right: 20px;
+    background-color: antiquewhite;
 }
 .navbarLeft ul li{
     list-style: none;
@@ -23,7 +25,7 @@ img{
 }
 .navbarLeft ul li a{
     text-decoration: none;
-    color: blueviolet; /*change this */
+    color: black; /*change this */
 }
 .navbarLeft ul li::after{
     content: '';
@@ -46,40 +48,26 @@ img{
     margin-left: 10px;
 }
 
-
-.headerblock{
-    background-color: darksalmon;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4%;
-    
-}
-.Headertext{
-    background-color: orchid;
-    flex: 3;
-    text-align: right;
-    font-size: 40px;
-    margin-right: 5%;
-    height: 30%;
-
-}
-.headshot{
-    margin-left: auto;
-    margin-right: 10%;
-    width: 30%;
-}
 ul{
     list-style: none;
     padding-left: 10 px;
 }
-a{
+
+.navbarRight a{
     text-decoration: none;
     color: black;
 }
-a:hover{
-    color: blue;
+.navbarRight a:hover{
+    color: #009688;
 }
+
+.title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 .about{
     margin-left: 50px;
     margin-right: 50px;
@@ -92,16 +80,43 @@ a:hover{
     margin-left: 20px;
     display: inline-block;
 }
-.links{
-    display: inline-block;
+
+.coursestext{
+    width: 60%;
+    margin: auto; 
+    text-align: left; 
+    background-color: lightgreen;
+    box-sizing: border-box;
 }
+.coursesstanding h2{
+    display: inline;
+    margin: 0;
+}
+.coursesstanding p{
+    margin:10px;
+    display: inline;
+}
+
 .experience{
-    margin-left: 70px;
-    margin-right: 50px;
-    background-color: bisque;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin:auto;
+    background-color: lightpink;
+    padding:10px;
 }
-.education{
-    margin-left: 70px;
-    margin-right: 50px;
-    background-color: lightblue;
+.experience img{
+    width: 40%;
+}
+.experiencetext{
+    padding-left: 10px;
+    text-align: left;
+}
+.experiencetext h2{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.experiencetext p{
+    margin-top: 0;
 }
