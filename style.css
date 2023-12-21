@@ -72,7 +72,6 @@ ul{
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
-    background-color: darkgoldenrod;
     
 }
 .abouttext{
@@ -85,7 +84,6 @@ ul{
     width: 60%;
     margin: auto; 
     text-align: left; 
-    background-color: lightgreen;
     box-sizing: border-box;
 }
 .coursesstanding h2{
@@ -103,7 +101,6 @@ ul{
     justify-content: center;
     width: 60%;
     margin:auto;
-    background-color: lightpink;
     padding:10px;
 }
 .experience img{
