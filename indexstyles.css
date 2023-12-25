@@ -13,7 +13,7 @@ body{
     align-items: center;
     justify-content: space-around;
     padding-right: 20px;
-    background-color: #030619ff;
+    background-color: #040615ff;
     position: sticky;
     top: 0;
     color:#e6ecef;
@@ -29,7 +29,7 @@ body{
 }
 .navbarLeft ul li a{
     text-decoration: none;
-    color: #e6ecef; /*change this */
+    color: #e6ecef; 
 }
 .navbarLeft ul li::after{
     content: '';
@@ -76,28 +76,27 @@ ul{
 
 
 /*----------Index.html------------*/
+
+
 .background{
-    position: fixed;
+    margin:auto;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    filter: brightness(70%);
+    background-image: url("IMG_7487.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
-.background img{
+
+.introoverlay{
+    backdrop-filter: brightness(60%);
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
+    overflow: hidden;
 
-
-.intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: brightness(100%);
-    width: 70%;
-    margin:auto;
 }
 
 .introtxt{
@@ -105,9 +104,12 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     height: 90vh;
+    width: 60%;
     text-align: center;
     color: #e6ecef;
+
 }
 .introtxt h1{
     font-size: 4vw;
@@ -116,30 +118,33 @@ ul{
     font-size: 1.5vw;
 }
 
-.about{
+.aboutoverlay{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: black;
-    backdrop-filter: opacity(70%);
-    /* filter: brightness(100%); */
-    height: 40vh;
+    backdrop-filter: brightness(20%);
+    height: 50vh;
     
 }
 .abouttext{
-    filter: brightness(100%);
-    width: 60%;
+    width: 50%;
     margin:auto;
     color: #e6ecef;
 }
 
-.about ul{
+.abouttext h1{
+    font-size: 2.2vw;
+}
+.abouttext li{
+    font-size: 1.15vw;
+}
+
+.abouttext ul{
     list-style: disc;
 }
 
-.about li::marker{
+.abouttext li::marker{
     font-size: 1.75em;
 }
 
- 
