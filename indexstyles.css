@@ -5,7 +5,7 @@ body{
     overflow-y: scroll;
     background-color: #021723;
 }
-
+/* TODO: Fix links so they look nice when squished */
 .navbar{
     max-width: 100%;
     margin: auto;
@@ -84,7 +84,7 @@ ul{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("IMG_7487.jpg");
+    background-image: url("IMG_74872.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -112,10 +112,27 @@ ul{
 
 }
 .introtxt h1{
-    font-size: 4vw;
+    font-size: 4em;
 }
 .introtxt p{
-    font-size: 1.5vw;
+    font-size: 1.5em;
+}
+
+@media (max-width: 800px){
+    .introtxt {
+        width: 100%; /* Adjust the width for smaller screens */
+    }
+    .introtxt h1{
+        font-size: 4em;
+    }
+    .introtxt p{
+        font-size: 1em;
+    }
+}
+@media (max-width: 1000px) {
+    .introtxt {
+        width: 80%; /* Adjust the width for smaller screens */
+    }
 }
 
 .aboutoverlay{
@@ -134,10 +151,10 @@ ul{
 }
 
 .abouttext h1{
-    font-size: 2.2vw;
+    font-size: 2.2em;
 }
 .abouttext li{
-    font-size: 1.15vw;
+    font-size: 1em;
 }
 
 .abouttext ul{
@@ -148,3 +165,21 @@ ul{
     font-size: 1.75em;
 }
 
+@media (max-width: 800px){
+    .abouttext {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+    
+    .abouttext p{
+        font-size: 2em;
+    }
+}
+@media (max-width: 1000px) {
+    .abouttext {
+        width: 70%; /* Adjust the width for smaller screens */
+    }
+    
+    .abouttext p{
+        font-size: 2em;
+    }
+}

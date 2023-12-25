@@ -9,6 +9,8 @@ body{
 img{
     width: 100%;
 }
+/* TODO: Fix links so they look nice when squished */
+
 .navbar{
     max-width: 100%;
     margin: auto;
@@ -81,11 +83,17 @@ ul{
     width: 55%;
     margin: auto; 
     text-align: left; 
-    box-sizing: border-box;
     color: #e6ecef;
+}
+.semester{
     border:1px solid #e6ecef;
     border-radius: 20px;
     padding: 10px;
+    margin: 20px;
+    
+}
+.semester ul{
+    list-style-type: disc;
 }
 .coursesstanding h2{
     display: inline;
@@ -94,6 +102,19 @@ ul{
 .coursesstanding p{
     margin:10px;
     display: inline;
+}
+@media (max-width: 1000px) {
+    .coursestext{
+        width: 65%; /* Adjust the width for smaller screens */
+    }
+    .coursestext ul{
+        padding-left: 20px;
+    }
+}
+@media (max-width:800px){
+    .coursestext{
+        width:80%;
+    }
 }
 /*----------experience.html------------*/
 .experience{
