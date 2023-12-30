@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-y: scroll;
-    background-color: #021723;
+    background-color: #091326;
 
 }
 img{
@@ -22,6 +22,7 @@ img{
     position: sticky;
     top: 0;
     color:#e6ecef;
+    z-index: 1;
 
 }
 .navbarLeft ul li{
@@ -86,10 +87,11 @@ ul{
     color: #e6ecef;
 }
 .semester{
-    border:1px solid #e6ecef;
-    border-radius: 20px;
+    /* border:1px solid #e6ecef;
+    border-radius: 20px; */
     padding: 10px;
     margin: 20px;
+    margin-bottom: 10%;
     
 }
 .semester ul{
@@ -123,7 +125,11 @@ ul{
     justify-content: center;
     width: 60%;
     margin:auto;
-    padding:10px;
+    padding:15px;
+    background-color: #5F6D73;
+    border-radius: 20px;
+    
+
 }
 .experience img{
     width: 40%;
@@ -132,6 +138,8 @@ ul{
     padding-left: 10px;
     text-align: left;
     color: #e6ecef;
+
+    
 }
 .experiencetext h2{
     margin-top: 0px;
@@ -139,4 +147,16 @@ ul{
 }
 .experiencetext p{
     margin-top: 0;
+}
+
+.hidden{
+    opacity: 0;
+    
+}
+
+.show{
+    opacity: 1;
+    animation: fadeInUp;
+    animation-duration: 0.9s;
+    animation-delay: -0.3s;
 }
