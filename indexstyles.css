@@ -3,7 +3,11 @@ body{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-y: scroll;
-    background-color: #021723;
+    background-image: url("IMG_74872.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 /* TODO: Fix links so they look nice when squished */
 .navbar{
@@ -77,7 +81,7 @@ ul{
 
 /*----------Index.html------------*/
 
-
+/*
 .background{
     margin:auto;
     top: 0;
@@ -90,6 +94,7 @@ ul{
     background-attachment: fixed;
     background-position: center;
 }
+*/
 
 .introoverlay{
     background: rgba(0, 0, 0, 0.4);

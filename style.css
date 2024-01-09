@@ -3,12 +3,13 @@ body{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-y: scroll;
-    background-color: #091326;
+    background-image: url("IMG_74872.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 
-}
-img{
-    width: 100%;
-}
 /* TODO: Fix links so they look nice when squished */
 
 .navbar{
@@ -18,7 +19,7 @@ img{
     align-items: center;
     justify-content: space-around;
     padding-right: 20px;
-    background-color: #040615ff;
+    background-color: #010207;
     position: sticky;
     top: 0;
     color:#e6ecef;
@@ -76,8 +77,46 @@ ul{
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
     color:#e6ecef;
 } 
+/*
+.background{
+    margin:auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("IMG_74872.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+*/
+.aboutoverlay{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+.aboutoverlay1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.aboutoverlay a{
+    color:#9facb3;
+}
+.aboutoverlay a:visited{
+    color:#829097;
+}
 
 /*----------courses.html------------*/
 .coursestext{
@@ -87,8 +126,6 @@ ul{
     color: #e6ecef;
 }
 .semester{
-    /* border:1px solid #e6ecef;
-    border-radius: 20px; */
     padding: 10px;
     margin: 20px;
     margin-bottom: 10%;
@@ -121,32 +158,30 @@ ul{
 /*----------experience.html------------*/
 .experience{
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
     width: 60%;
     margin:auto;
-    padding:15px;
-    background-color: #5F6D73;
-    border-radius: 20px;
-    
-
-}
-.experience img{
-    width: 40%;
-}
-.experiencetext{
-    padding-left: 10px;
-    text-align: left;
-    color: #e6ecef;
-
-    
-}
-.experiencetext h2{
-    margin-top: 0px;
-    margin-bottom: 5px;
-}
-.experiencetext p{
     margin-top: 0;
+    padding:15px;
+    color: #e6ecef;
+}
+
+.experiencetitle{
+    margin: 0 0 5px;
+}
+.experiencetitle h2{
+    display:inline;
+}
+.experiencetitle p{
+    display: inline;
+    margin: 0;
+
+}
+
+.experiencetext p{
+    margin-top: 0px;
+    color: #e6ecef;
 }
 
 .hidden{
@@ -158,5 +193,22 @@ ul{
     opacity: 1;
     animation: fadeInUp;
     animation-duration: 0.9s;
-    animation-delay: -0.3s;
+    animation-delay: -0.45s;
+}
+
+/*----------projects.html------------*/
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    margin:auto;
+    margin-top: 0;
+    padding:15px;
+    color: #e6ecef;
+}
+
+.experiencetext p{
+    margin-top: 0px;
+    color: #e6ecef;
 }
